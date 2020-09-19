@@ -1,0 +1,93 @@
+
+/*NEUTRALIDAD*/
+header, section, aside, article, footer {
+    display: block;
+    margin: 0px;
+    padding: 0px;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    background-color: #fffffff;
+}
+
+body {
+    background-color: #fffffff;
+}
+
+img {
+    border: 0;
+}
+
+/*ESTRUCTURAL*/
+body {
+    width: 100%;
+    font-size: 16px;
+    margin: auto;
+    text-align: center;
+}
+
+header {
+    width: 100%;
+    background-color: #F2F2F2;
+    height: auto;
+    padding-top: 24px
+}
+
+section {
+    width: 100%;
+    min-height: 500px;
+    overflow: hidden;
+}
+/*CLASS*/
+.header_button {
+    border-width: thick;
+    border-color: #E46606;
+    display: inline;
+    margin: 4px;
+    margin-left: 8px;
+    margin-right: 8px;
+    padding: 4px;
+    color: #E46606;
+    font-size: 24px;
+}
+
+    .header_button a {
+        text-decoration: none;
+        color: #E46606;
+    }
+
+.header_button_selected {
+    background-color: #7A3A8C;
+    display: inline;
+    margin: 4px;
+    margin-left: 8px;
+    margin-right: 8px;
+    padding: 4px;
+    color: #ffffff;
+    font-size: 24px;
+    border-radius: 5px;
+}
+
+    .header_button_selected a {
+        text-decoration: none;
+        color: #ffffff;
+    }
+
+.header_title {
+    font-size:64px;
+    margin-bottom: 0px;
+}
+
+.header_subtitle {
+    font-size: 24px;
+    margin-top: 0px;
+}
+
+.line{
+    
+}
