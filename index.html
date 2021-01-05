@@ -1,71 +1,174 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
+<html>
+<title>Christopher Badra Portfolio</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<body class="w3-content" style="max-width:1300px">
 
-<head>
-    <meta chartset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Christopher Badra Melian - Videogame programmer personal portfolio</title>
-    <meta name="description" content="Games programmer and designer" />
-
-
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
-
-    <!------------------STYLESHEETS------------------>
-    <link rel="stylesheet" type="text/css" href="./style/stylebase.css" />
-</head>
-
-<body>
-    <header>
-        <div class="header_title_container">
-            <div class="header_title">Christopher Badra Melian</div>
-            <p class="header_subtitle">Videogame Programmer and Designer</p>
+    <!-- First Grid: Logo & About -->
+    <div class="w3-row">
+        <div class="w3-half w3-black w3-container w3-center" style="height:700px">
+            <div class="w3-padding-64">
+                <h1>Christopher Badra</h1>
+                <h3>Game programmer</h3>
+            </div>
+            <div class="w3-padding-64">
+                <a href="#" class="w3-button w3-black w3-block w3-hover-blue-grey w3-padding-16">About me</a>
+                <a href="#work" class="w3-button w3-black w3-block w3-hover-teal w3-padding-16">My Work</a>
+                <a href="#work" class="w3-button w3-black w3-block w3-hover-dark-grey w3-padding-16">Resume</a>
+                <a href="#contact" class="w3-button w3-black w3-block w3-hover-brown w3-padding-16">Skills</a>
+                <a href="#contact" class="w3-button w3-black w3-block w3-hover-brown w3-padding-16">Contact</a>
+            </div>
         </div>
-        <div class="header_nav">
-            <div class="header_button_selected"><a href="./index.html">Portfolio</a></div>
-            <div class="header_button"><a href="./about_me.html">About Me</a></div>
-            <div class="header_button"><a href="./cv_christopherbadra.pdf">Resume</a></div>
-        </div>
-        <hr class="line" />
-    </header>
-
-    <section>
-        <p class="header_button_selected">Currently Work In Progress</p>
-        <hr />
-        <div class="site_article">
-            <div class="container">
-                <a class="portfolio_image" href="./oona.html">
-                    <img width="400" height="225" src="./oona/images/oona_screenshot_l.jpg" />
-                </a>
-                <div class="portfolio_text" width="400">
-                    <p class="portfolio_title"><b>Oona and the Druids Path</b></p>
-                    <p class="portfolio_description">A platformer 2.5D videogame developed with Unreal Engine 4<br />that is going to be released soon to Steam</p>
-                    <p class="portfolio_tech"><b>Tags:</b> C++, Unreal Engine 4</p>
-
+        <div class="w3-half w3-blue-grey w3-container" style="height:700px">
+            <div class="w3-padding-64 w3-center">
+                <h1>About Me</h1>
+                <!--<img src="/w3images/avatar3.png" class="w3-margin w3-circle" alt="Person" style="width:50%"> -->
+                <div class="w3-center-align w3-padding-large">
+                    <p>I'm a young spanish developer looking for new opportunities to expand myself working on new projects.</p>
+                    <p>Open-minded, resourceful and motivated.</p>
                 </div>
             </div>
-            <div class="container">
-                <a class="portfolio_image" href="./hge.html">
-                    <img width="400" height="225" src="./hge/images/hge_screenshot_1.png"/>
-                </a>
-                <div class="portfolio_text" width="400">
-                    <p class="portfolio_title"><b>Hysteria Game Engine</b></p>
-                    <p class="portfolio_description">A multithread game engine developed with OpenGL<br />that support a composite post-process pipeline, shadows and PBR</p>
-                    <p class="portfolio_tech"><b>Tags:</b> C++, OpenGL</p>
+        </div>
+    </div>
 
+    <!-- Second Grid: Work & Resume -->
+    <div class="w3-row">
+        <div class="w3-half w3-light-grey w3-center" style="min-height:800px" id="work">
+            <div class="w3-padding-16">
+                <h2>My Work</h2>
+                <p>Some of my latest projects.</p>
+            </div>
+                <p class="w3-black" style="margin:0px">Oona. The druids path</p>
+                <div class="w3-row">
+                    <img src="./oona/images/oona_screenshot_h_title.jpg" style="width:100%">
+                </div>
+                <p class="w3-black" style="margin:0px">Hysteria Game Engine. OpenGL Engine</p>
+                <div class="w3-row w3-hide-small">
+                    <img src="./hge/images/hge_screenshot_title.png" style="width:100%">
+                </div>
+            <!--<div class="w3-row w3-hide-small">
+        <div class="w3-half">
+            <img src="./hge/images/hge_screenshot_1.png" style="width:100%">
+        </div>
+        <div class="w3-half">
+            <img src="/w3images/coffee.jpg" style="width:100%">
+        </div>
+    </div>-->
+
+            <br>
+            <p>Just call me awesome.</p>
+        </div>
+        <div class="w3-half w3-indigo w3-container" style="min-height:800px">
+            <div class="w3-padding-64 w3-center">
+                <h2>Resume</h2>
+                <a href="./cv_christopherbadra.pdf">My CV</a>
+                <p>A draft from my CV</p>
+                <div class="w3-container w3-responsive">
+                    <table class="w3-table">
+                        <tr>
+                            <th>Year</th>
+                            <th>Title</th>
+                            <th>Where</th>
+                        </tr>
+                        <tr class="w3-white">
+                            <td>2018-2020</td>
+                            <td>Oona. The druids path. A 2.5D platformer game for PC in Unreal Engine 4. <a href="https://www.youtube.com/watch?v=yRUgvU2ROC4&ab_channel=ESATVALENCIA">Link to the trailer</a></td>
+                            <td>Astro Pups Games, Valencia</td>
+                        </tr>
+                        <tr>
+                            <td>2018-2020</td>
+                            <td>Hysteria Game Engine. A 3D engine developed with OpenGL with multithread, ECS architecture and more. <a href="https://www.youtube.com/watch?v=nDQVxT72Xlw&ab_channel=badrame">Link to the demo</a></td>
+                            <td>ESAT, Valencia</td>
+                        </tr>
+                        <tr class="w3-white">
+                            <td>2018-2020</td>
+                            <td>HND in Computer Science in ESAT</td>
+                            <td>ESAT, Valencia</td>
+                        </tr>
+                    </table>
                 </div>
             </div>
-        </div="site_article">
-    </section>
+        </div>
+    </div>
 
-    <footer class="site_footer">
-        <hr class="line" />
-        <div class="footer_colum">
-            <p><b>Contact me:</b></p>
-            <a href="christopherbadras@gmail.com">christopherbadras@gmail.com</a>
+    <!-- Third Grid: Swing By & Contact -->
+    <div class="w3-row" id="contact">
+        <div class="w3-half w3-dark-grey w3-container w3-center" style="height:700px">
+            <div class="w3-padding-16">
+                <h1 style="margin:0">Skills</h1>
+            </div>
+            <div class="w3-padding-16">
+                <p>Computing Language</p>
+                <table class="w3-table">
+                    <tr class="w3-white">
+                        <td>C++</td>
+                        <td>Most used</td>
+                    </tr>
+                    <tr>
+                        <td>C#</td>
+                        <td>Good Level</td>
+                    </tr>
+                    <tr class="w3-white">
+                        <td>GLSL</td>
+                        <td>Good Level</td>
+                    </tr>
+                    <tr>
+                        <td>ARM assembler</td>
+                        <td>Some Kwonledge</td>
+                    </tr>
+                    <tr class="w3-white">
+                        <td>Lua</td>
+                        <td>Some Kwonledge</td>
+                    </tr>
+                </table>
+                <p>Tech Skills</p>
+                <table class="w3-table">
+                    <tr class="w3-white">
+                        <td>Unreal Engine 4</td>
+                        <td>Good Level</td>
+                    </tr>
+                    <tr>
+                        <td>Unity</td>
+                        <td>Good Level</td>
+                    </tr>
+                    <tr class="w3-white">
+                        <td>OpenGL</td>
+                        <td>Good Level</td>
+                    </tr>
+                    <tr>
+                        <td>Source Control (Git & Perforce)</td>
+                        <td>Good Level</td>
+                    </tr>
+                    <tr class="w3-white">
+                        <td>Render Doc</td>
+                        <td>Some Kwonledge</td>
+                    </tr>
+                </table>
+                <p>Spanish Native Speaker</p>
+                <p class="w3-white">English Intermediate Level</p>
+                <p class="w3-opacity">If I lack of some required skill, just give me a week</p>
+            </div>
         </div>
-        <div class="footer_colum">
-            <a href="https://www.linkedin.com/in/badrame/"><img widht="16" height="16" src="./minimal-logo/LI-In-Bug.png" />badrame</a>
-            <a href="https://twitter.com/rbadrame"><img widht="16" height="16" src="./minimal-logo/Twitter_Social_Icon.png" />@rbadrame</a>
+        <div class="w3-half w3-teal w3-container w3-center" style="height:700px">
+            <div class="w3-padding-64 w3-padding-large">
+                <h1>Contact</h1>
+                <p class="w3-opacity">For everythin you need</p>
+                <div class="w3-padding-32">
+                    <p>Fuerteventura, Spain</p>
+                    <p>+34 601125891</p>
+                    <p>christopherbadras@gmail.com</p>
+                    <p>LinkedIn <a href="https://www.linkedin.com/in/badrame/">Christopher Badra Melian</a></p>
+                </div>
+            </div>
         </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="w3-container w3-black w3-padding-16">
+        <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p>
     </footer>
+
 </body>
+</html>
