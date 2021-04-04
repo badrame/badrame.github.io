@@ -7,6 +7,14 @@
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <style>
+    @font-face {
+        font-family: LemonMilkBold;
+        src: url(./style/LEMONMILK-Bold.otf);
+    }
+    @font-face {
+        font-family: LemonMilk;
+        src: url(./style/LEMONMILK-Regular.otf);
+    }
     body, h1, h2, h3, h4, h5, h6 {
         font-family: "Raleway", sans-serif
     }
@@ -15,7 +23,12 @@
         height: 100%;
         line-height: 1.8;
     }
-
+    .title_label {
+        font-family: LemonMilk;
+    }
+    .subtitle_label {
+        font-family: LemonMilkBold;
+    }
     /* Full height image header */
     .bgimg-1 {
         background-position: center;
@@ -37,10 +50,10 @@
             <!-- Right-sided navbar links -->
             <div class="w3-center w3-hide-small">
                 <a href="#about" class="w3-bar-item w3-button">ABOUT ME</a>
-                <a href="#team" class="w3-bar-item w3-button">PROJECTS</a>
-                <a href="#work" class="w3-bar-item w3-button">SKILLS</a>
-                <a href="#pricing" class="w3-bar-item w3-button">CV</a>
-                <a href="./cv_christopherbadra.pdf" class="w3-bar-item w3-button">CONTACT</a>
+                <a href="#projects" class="w3-bar-item w3-button">PROJECTS</a>
+                <a href="#skills" class="w3-bar-item w3-button">SKILLS</a>
+                <a href="./cv_christopherbadra.pdf" class="w3-bar-item w3-button">CV</a>
+                <a href="#contact" class="w3-bar-item w3-button">CONTACT</a>
             </div>
             <!-- Hide right-floated links on small screens and replace them with a menu icon -->
 
@@ -54,77 +67,92 @@
     <nav class="w3-sidebar w3-bar-block w3-black w3-card w3-animate-left w3-hide-medium w3-hide-large" style="display:none" id="mySidebar">
         <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-large w3-padding-16">Close �</a>
         <a href="#about" onclick="w3_close()" class="w3-bar-item w3-button">ABOUT</a>
-        <a href="#team" onclick="w3_close()" class="w3-bar-item w3-button">PROJECTS</a>
-        <a href="#work" onclick="w3_close()" class="w3-bar-item w3-button">SKILLS</a>
-        <a href="#pricing" onclick="w3_close()" class="w3-bar-item w3-button">CV</a>
-        <a href="./cv_christopherbadra.pdf" onclick="w3_close()" class="w3-bar-item w3-button">CONTACT</a>
+        <a href="#projects" onclick="w3_close()" class="w3-bar-item w3-button">PROJECTS</a>
+        <a href="#skills" onclick="w3_close()" class="w3-bar-item w3-button">SKILLS</a>
+        <a href="./cv_christopherbadra.pdf" onclick="w3_close()" class="w3-bar-item w3-button">CV</a>
+        <a href="#contact" onclick="w3_close()" class="w3-bar-item w3-button">CONTACT</a>
     </nav>
 
     <!-- Header with full-height image -->
     <header class="bgimg-1 w3-display-container w3-grayscale-min" id="home">
         <div class="w3-display-middle w3-text-white w3-center" style="padding:48px">
-            <span class="w3-jumbo w3-hide-small">Christopher Badra</span><br>
-            <span class="w3-xxlarge w3-hide-large w3-hide-medium">Christopher Badra</span><br>
+            <span class="w3-jumbo w3-hide-small title_label">Christopher Badra</span><br>
+            <span class="w3-xxlarge w3-hide-large w3-hide-medium w3-sans-serif">Christopher Badra</span><br>
             <span class="w3-large">Videogames Programmer and Designer</span>
         </div>
         <div class="w3-display-bottomleft w3-text-grey w3-large" style="padding:24px 48px">
-            <i class="fa fa-twitter w3-hover-opacity"></i>
-            <i class="fa fa-linkedin w3-hover-opacity"></i>
+            <a href="https://twitter.com/rbadrame"><i class="fa fa-twitter w3-hover-opacity"></i></a>
+            <a href="https://www.linkedin.com/in/badrame/"><i class="fa fa-linkedin w3-hover-opacity"></i></a>
         </div>
     </header>
 
     <!-- About Section -->
     <div class="w3-container w3-white" style="padding:128px 16px" id="about">
-        <h3 class="w3-center">ABOUT ME</h3>
-        <p class="w3-center w3-large">I am a videogames programmer interested in gameplay and design</p>
-        <div class="w3-row-padding w3-center" style="margin-top:64px">
+        <h3 class="w3-center title_label">ABOUT ME</h3>
+        <p class="w3-center w3-large">A videogames programmer interested in gameplay and design</p>
+        <div class="w3-row-padding w3-center" style="margin-top:32px">
             <p class="w3-center">I am a spanish young developer who always enjoy playing and analysing videogames.</p>
+            <p class="w3-center">Team worker and good organizing my own tasks. I can work by my own or co-operate efficiently with my team.</p>
+            <p class="w3-center">I like to explain what I am working with documents and charts, having draw.io linked on my taskbar all time.</p>
             <p class="w3-center">I obtained my HND in Computer Science while studing in Valencia at ESAT, where I learn how to program and make games.</p>
-            <p class="w3-center">Not stopping there, I keep learning everything I can by developing more games while looking for work</p>
+            <p class="w3-center">Not stopping there, I keep learning everything I can by developing more games while looking for work.</p>
         </div>
     </div>
 
-    <!-- Work Section -->
-    <div class="w3-container w3-black" style="padding:128px 16px" id="work">
-        <h3 class="w3-center">PROJECTS</h3>
+    <!-- Projects Section -->
+    <div class="w3-container w3-black" style="padding:128px 16px" id="projects">
+        <h3 class="w3-center title_label">PROJECTS</h3>
         <!-- Oona The Druids Path -->
-        <div class="w3-center">
-            <h3 class="w3-center">Oona the Druids Path</h3>
-            <img src="./oona/images/oona_image.png" onclick="document.getElementById('modal02').style.display='block'" class="w3-hover-opacity" alt="Oona Trailer">
-            <p class="w3-center w3-large">Oona The Druids Path is a 2.5D Platformer videogame developed in Unreal Engine 4.</p>
-            <p class="w3-center w3-large"><a href="https://store.steampowered.com/app/1464620/Oona_the_Druids_Path/">Steam Page</a></p>
-            <p class="w3-center ">
-                Is currently released on Steam for free and its receiving good reviews.<br />
-                It has been nominated for the GDWC in the fan category.
-            </p>
-            <p class="w3-center w3-large">Some of my contributions are:</p>
-            <p class="w3-center">
-                - Design and implementation of the movement mechanics of the player <br />
-                - Design and implementation of the camera system and all features around the camera <br />
-                - Interaction system of the game <br />
-                - Some Enemy Behaviours <br />
-                - Level design <br />
-                - Implementation of sound effects <br />
-                - Implementation of particle effects <br />
-            </p>
-            <p class="w3-center w3-large">About the game </p>
-            <p class="w3-center">
-
-            </p>
+        <div class=" ">
+            <h3 class="w3-center subtitle_label">Oona the Druids Path</h3>
+            <div class="w3-center w3-container w3-half">
+                <img src="./oona/images/oona_image.png" onclick="document.getElementById('modal02').style.display='block'" class="w3-hover-opacity w3-right" alt="Oona Trailer" style="max-width:100%">
+            </div>
+            <div class="w3-half">
+                <p class="w3-large">Oona The Druids Path is a 2.5D Platformer videogame developed in Unreal Engine 4.</p>
+                <p class="w3-large"><a href="https://store.steampowered.com/app/1464620/Oona_the_Druids_Path/">Steam Page</a></p>
+                <p class="">
+                    It's released on Steam for free and its receiving good reviews.<br />
+                    It has been nominated for the GDWC in the fan category.
+                </p>
+                <p class=" w3-large">Some of my contributions are:</p>
+                <p class="">
+                    - Design and implementation of the movement mechanics of the player <br />
+                    - Design and implementation of the camera system and all features around the camera <br />
+                    - Interaction system of the game <br />
+                    - Some Enemy Behaviours <br />
+                    - Implementation some behaviours and systems for the level design.<br />
+                    - Level design in cooperation with the artist team.<br />
+                    - Implementation of sound effects <br />
+                    - Implementation of particle effects <br />
+                </p>
+            </div>
+            <div class="w3-center w3-container">
+                <p class="w3-center w3-large">About the game </p>
+                <p class="w3-center">
+            </div>
+            <hr />
+            
         </div>
+        <br />
         <!-- Graphic Engine -->
-        <div class="w3-center">
-            <h3 class="w3-center">OpenGl Graphic Engine</h3>
-            <img src="./hge/images/hge_screenshot_title.png" onclick="document.getElementById('modal03').style.display='block'" class="w3-hover-opacity" alt="OpenGl Graphic Engine">
-            <p class="w3-center w3-large">A 3D Graphic Engine programmed from scratch in C++</p>
-            <p class="w3-center w3-large">Some of it's features are:</p>
-            <p class="w3-center">
-                - Basic PBR implementation <br />
-                - ECS architecture <br />
-                - Multithread <br />
-                - Lua as scripting language <br />
-                - Shadow Mapping <br />
-            </p>
+        <div class="w3-container">
+            <h3 class="w3-center subtitle_label">OpenGl Graphic Engine</h3>
+            <div class="w3-half">
+                <p class="w3-center w3-large">A 3D Graphic Engine programmed from scratch in C++</p>
+                <p class="w3-center w3-large">Some of it's features are:</p>
+                <p class="w3-center">
+                    - Basic PBR implementation <br />
+                    - ECS architecture <br />
+                    - Multithread <br />
+                    - Lua as scripting language <br />
+                    - Shadow Mapping <br />
+                </p>
+            </div>
+            <div class="w3-half">
+                <img src="./hge/images/hge_screenshot_title.png" onclick="document.getElementById('modal03').style.display='block'" class="w3-hover-opacity" alt="OpenGl Graphic Engine" style="max-width:100%">
+            </div>
+
         </div>
     </div>
 
@@ -152,21 +180,37 @@
     </div>
 
     <!-- Skills Section -->
-    <div class="w3-container w3-white" style="padding:128px 16px" id="about">
-        <h3 class="w3-center">Skills</h3>
-        <p class="w3-center w3-large">I am a videogames programmer interested in gameplay and design but I have knwoledge of graphic programming, AI and some other things.</p>
-        <div class="w3-row-padding w3-center" style="margin-top:64px">
-            <p class="w3-center">Programming languages: C++ // C#  </p>
-            <p class="w3-center">Game Engines: Unreal Engine 4 // Unity  </p>
-            <p class="w3-center">Source Control: Git // Perforce  </p>
-            <p class="w3-center">Ide: Visual Studio</p>
+    <div class="w3-container w3-white" style="padding:128px 16px" id="skills">
+        <h3 class="w3-center title_label">Skills</h3>
+        <p class="w3-center w3-large">Although been interested in gameplay and design, I have knowledge of graphic programming, AI and some other stuff that can help me during the development. </p>
+        <div class="w3-half w3-center" style="margin-top:32px">
+            <div class="w3-right" style="margin-right:64px">
+                <p class="w3-center w3-large">Programming languages: C++ // C#  </p>
+                <p class="w3-center w3-large">Others: ASM(ARM) // GLSL  </p>
+                <p class="w3-center w3-large">Game Engines: Unreal Engine 4 // Unity  </p>
+                <p class="w3-center w3-large">Source Control: Git // Perforce  </p>
+                <p class="w3-center w3-large">Ide: Visual Studio</p>
+                <p class="w3-center w3-large">Other Tech Skills: OpenGL // Render Doc</p>
+
+            </div>
+        </div>
+        <div class="w3-half w3-center" style="margin-top:32px">
+            <div class="w3-left" style="margin-left: 64px">
+                <p class="w3-center w3-large">Languages: Spanish(Native) // English  </p>
+                <p class="w3-center w3-large">Problem Solving Skills</p>
+                <p class="w3-center w3-large">Good at debugging own and others code</p>
+                <p class="w3-center w3-large">Good management of my own tasks</p>
+                <p class="w3-center w3-large">Good communication skills</p>
+                <p class="w3-center w3-large">Can work autonomous or in a team</p>
+
+            </div>
         </div>
     </div>
 
 
     <!-- Contact Section -->
-    <div class="w3-container w3-light-grey" style="padding:128px 16px" id="contact">
-        <h3 class="w3-center">CONTACT</h3>
+    <div class="w3-container w3-light-grey" style="padding:32px 16px" id="contact">
+        <h3 class="w3-center title_label">CONTACT</h3>
         <div style="margin-top:48px">
             <p><i class="fa fa-map-marker fa-fw w3-xxlarge w3-margin-right"></i> Fuerteventura, Spain</p>
             <p><i class="fa fa-envelope fa-fw w3-xxlarge w3-margin-right"> </i> Email: christopherbadras@gmail.com</p>
@@ -177,8 +221,8 @@
     <footer class="w3-center w3-black w3-padding-64">
         <a href="#home" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
         <div class="w3-xlarge w3-section">
-            <i class="fa fa-twitter w3-hover-opacity"></i>
-            <i class="fa fa-linkedin w3-hover-opacity"></i>
+            <a href="https://twitter.com/rbadrame"><i class="fa fa-twitter w3-hover-opacity"></i></a>
+            <a href="https://www.linkedin.com/in/badrame/"><i class="fa fa-linkedin w3-hover-opacity"></i></a>
         </div>
         <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-text-green">w3.css</a></p>
     </footer>
