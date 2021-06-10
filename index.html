@@ -101,38 +101,146 @@
 
     <!-- Projects Section -->
     <div class="w3-container w3-black" style="padding:128px 16px" id="projects">
-        <h3 class="w3-center title_label">PROJECTS</h3>
+        <h1 class="w3-center title_label">PROJECTS</h1>
         <!-- Oona The Druids Path -->
         <div class=" ">
             <h3 class="w3-center subtitle_label">Oona the Druids Path</h3>
-            <div class="w3-center w3-container w3-half">
-                <img src="./oona/images/oona_image.png" onclick="document.getElementById('modal02').style.display='block'" class="w3-hover-opacity w3-right" alt="Oona Trailer" style="max-width:100%">
+            <div class="w3-container">
+                <div class="w3-center w3-container w3-half">
+                    <img src="./oona/images/oona_image.png" onclick="document.getElementById('modal02').style.display='block'" class="w3-hover-opacity w3-right" alt="Oona Trailer" style="max-width:100%">
+                </div>
+                <div class="w3-half">
+                    <p class="w3-large"><a href="https://store.steampowered.com/app/1464620/Oona_the_Druids_Path/"><b>Steam Page</b></a></p>
+                    <p class="w3-large">
+                        Oona The Druids Path is a 2.5D Platformer videogame developed in Unreal Engine 4.<br />
+                        Developed with a studio inside the university composed by programmers, artist and musicians.<br />
+                        Work as programmer, programmer team coordinator and game designer.<br />
+                        <br />
+                        Currently released on Steam for free and its receiving good reviews.<br />
+                        It has been nominated for the GDWC in the fan category.
+                    </p>
+                </div>
             </div>
-            <div class="w3-half">
-                <p class="w3-large">Oona The Druids Path is a 2.5D Platformer videogame developed in Unreal Engine 4.</p>
-                <p class="w3-large"><a href="https://store.steampowered.com/app/1464620/Oona_the_Druids_Path/">Steam Page</a></p>
-                <p class="">
-                    It's released on Steam for free and its receiving good reviews.<br />
-                    It has been nominated for the GDWC in the fan category.
-                </p>
-                <p class=" w3-large">Some of my contributions are:</p>
-                <p class="">
-                    - Design and implementation of the movement mechanics of the player <br />
-                    - Design and implementation of the camera system and all features around the camera <br />
-                    - Interaction system of the game <br />
-                    - Some Enemy Behaviours <br />
-                    - Implementation some behaviours and systems for the level design.<br />
-                    - Level design in cooperation with the artist team.<br />
-                    - Implementation of sound effects <br />
-                    - Implementation of particle effects <br />
-                </p>
-            </div>
-            <div class="w3-center w3-container">
-                <p class="w3-center w3-large">About the game </p>
-                <p class="w3-center">
+            <br />            
+
+            <h5 class="w3-center subtitle_label w3-container">Some of my contributions are:</h5>
+            <div class="w3-container">
+                <!-- Oona Movement-->
+                <div class="w3-container w3-third">
+                    <div class="">
+                        <div class="w3-center">
+                            <video height="240" controls style="max-width:100%">
+                                <source src="oona/movement_.mp4" type="video/mp4">
+                                Your browser does not support the video tag.
+                            </video>
+                        </div>
+                        <div class="w3-center">
+                            <p class="subtitle_label">Player Movement Mechanics</p>
+                            <p>
+                                WallJump in some surfaces. <br />
+                                Second jump on Jump Balls. <br />
+                                Slide and dash under some objects. <br />
+                                Glide before picking up an object. <br />
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Oona Cameras-->
+                <div class="w3-container w3-third">
+                    <div class="">
+                        <div class="w3-center">
+                            <video height="240" controls style="max-width:100%">
+                                <source src="oona/camera_system.mp4" type="video/mp4">
+                                Your browser does not support the video tag.
+                            </video>
+                        </div>
+                        <div class="w3-center">
+                            <p class="subtitle_label">Camera System</p>
+                            <p>
+                                Dynamic changes on distance and velocity. <br />
+                                Able to follow player, lock on a position, <br />
+                                follow with differents weights between different objects <br />
+                                or follow a spline. <br />
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Oona Interactable System-->
+                <div class="w3-container w3-third">
+                    <div class="">
+                        <div class="w3-center">
+                            <video height="240" controls style="max-width:100%">
+                                <source src="oona/interactive_system.mp4" type="video/mp4">
+                                Your browser does not support the video tag.
+                            </video>
+                        </div>
+                        <div class="w3-center">
+                            <p class="subtitle_label">Game Interaction System</p>
+                            <p>
+                                Player can interact with buttons and preassure plates with the environment.<br />
+                                Work for doors, moving platforms, rotation actors and more. <br />
+                                Event Synergy with the camera system. <br />
+                                Easy scalable to the other systems of the game. <br />
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Oona Game Feel-->
+                <div class="w3-container w3-half">
+                    <div class="">
+                        <div class="w3-center">
+                            <video height="240" controls style="max-width:100%">
+                                <source src="oona/feedback.mp4" type="video/mp4">
+                                Your browser does not support the video tag.
+                            </video>
+                        </div>
+                        <div class="w3-center">
+                            <p class="subtitle_label">Game Feel Work</p>
+                            <p>
+                                Player movement hacks like Ghost Jump and Input Execution delay. <br />
+                                Sound effects implementation and camera shakes. <br />
+                                Particles design and implementation. <br />
+                                Level Scripting for light and post process changes and adjustments. <br />
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Oona Design-->
+                <div class="w3-container w3-half">
+                    <div class="">
+                        <div class="w3-center">
+                            <video height="240" controls style="max-width:100%">
+                                <source src="oona/level_design.mp4" type="video/mp4">
+                                Your browser does not support the video tag.
+                            </video>
+                        </div>
+                        <div class="w3-center">
+                            <p class="subtitle_label">Game and Level Design</p>
+                            <p>
+                                Enemy behaviour and player mechanics design contributions.<br />
+                                Level Boss and Final Boss design and implementation. <br />
+                                Last level zone design. <br />
+                                Contributions on the rest of the level designing and scripting. <br />
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Oona Optimizations-->
+                <div class="w3-container">
+                    <div class="">
+                        <div class="w3-center">
+                            <p class="subtitle_label">Optimization and other stuff</p>
+                            <p>
+                                Profiling with the GPU visualizer and the different UE4 visualation options.<br />
+                                System of activation and deactivation animations and ticks. <br />
+                                Building and packaging debugging. <br />
+                                Game dead loop. <br />
+                            </p>
+                        </div>
+                    </div>
+                </div>
             </div>
             <hr />
-            
         </div>
         <br />
         <!-- Graphic Engine -->
@@ -182,7 +290,7 @@
     <!-- Skills Section -->
     <div class="w3-container w3-white" style="padding:128px 16px" id="skills">
         <h3 class="w3-center title_label">Skills</h3>
-        <p class="w3-center w3-large">Although been interested in gameplay and design, I have knowledge of graphic programming, AI and some other stuff that can help me during the development. </p>
+        <p class="w3-center w3-large">Although being interested in gameplay and design, I have knowledge of graphic programming, AI and some other stuff that can help me during the development. </p>
         <div class="w3-half w3-center" style="margin-top:32px">
             <div class="w3-right" style="margin-right:64px">
                 <p class="w3-center w3-large">Programming languages: C++ // C#  </p>
